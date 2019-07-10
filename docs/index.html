@@ -1,0 +1,188 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Core Server Documentation - IntegralClick</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	      <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="./" class="navbar-brand">Core Server Documentation - IntegralClick</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content getting-started">
+                   <div class="content-data">
+
+<h1 id="core-server-of-integralclick">Core Server of Integralclick</h1>
+<h2 id="introduction">Introduction</h2>
+<p>In this readme will belong all the project introduction for contribution, installation and purposes of this project.</p>
+<h2 id="api-docs">API Docs</h2>
+<p>Go to the <a href="https://documenter.getpostman.com/view/2862569/SVSDRBrJ?version=latest#e55e896b-6d07-48b1-af57-07a7a55e0e80">API Documentation by Postman</a></p>
+<h2 id="installation">Installation</h2>
+<p>Just fork/clone this project in your local machine and then run:
+<code>bash
+$ npm i</code></p>
+<p>By defaul there&#39;s a config folder with some yaml files which indicates if you are running on production or development mode, neverworthless there&#39;s a out of the box feature with DotEnv that you can use for production more securely or even better if you use the own server&#39;s environment variables. You only have to create a new .env in the root of the project and then use the example.env as template your new environment variables.</p>
+<p><code>...
+|- config
+    |- default.yml
+    |- production.yml
+    |- development.yml
+...
+|- example.env
+...</code></p>
+<h3 id="development">Development</h3>
+<p>For running development mode you will have a benefit, with the following comand that it will hear your changes in realtime with the one command as well will build the documentation at the same time:</p>
+<p>```bash
+$ npm run start:dev</p>
+<h1 id="or">or</h1>
+<p>$ yarn start:dev # for yarn
+```</p>
+<h3 id="build">Build</h3>
+<p>If you make changes in the project it is required to run build command for building it. If you would like to automatically build then just use Development Mode since it would not just build the code, but will also hear in real-time the changes you make.</p>
+<p>For building run:
+```bash
+npm run build</p>
+<h1 id="or-1">or</h1>
+<p>yarn build # for yarn
+```</p>
+<h3 id="production">Production</h3>
+<p>Then if you want to run into production you can simply run: </p>
+<p>```bash
+$ npm run start:prod</p>
+<h1 id="or-2">or</h1>
+<p>$ yarn start:prod # if you want to use yarn instead of npm of course.
+```</p>
+<blockquote>
+<p>Please note that Production would not build the project just run dist/main.js for For build click <a href="#Build">here</a></p>
+</blockquote>
+<h3 id="build-documentation">Build Documentation</h3>
+<p>Documentation is one of the more important steps we have to do in this project so please remember to document every annotation, function, class or whatever inside this project to maintain our team notificated and well informed.
+For building the documentation you can use as default method the <a href="#Development">development mode</a> since it will generate the documentation in the first command however everytime make sure you manually build it with: </p>
+<p>```bash
+npm run build:doc</p>
+<h1 id="or-3">or</h1>
+<p>yarn build:doc # for yarn
+```</p>
+<h2 id="contribution">Contribution</h2>
+<p>This project is under licence PROPIETARY and you will need to be allowed to modify / improve this work with belong of our company, code conduct instruction will be provided in short future as well as the proper code documentation, api documentation and all the necesary tools to work with us.</p>
+<h2 id="feature-list">Feature list</h2>
+<ul>
+<li>Documentation with Compodoc at <a href="https://github.com/integralclick/ic_core-server/releases/tag/v0.1.2-alpha">v0.1.2-alpha</a></li>
+<li>Security measures with CORS implemented at <a href="https://github.com/integralclick/ic_core-server/releases/tag/v0.1.3-alpha">v0.1.3-alpha</a></li>
+<li>Config PRODUCTION / DEVELOPMENT modes with yaml at <a href="https://github.com/integralclick/ic_core-server/releases/tag/v0.1.3-alpha">v0.1.3-alpha</a></li>
+<li>DotEnv for Environment Variable for Production at <a href="https://github.com/integralclick/ic_core-server/releases/tag/v0.1.3-alpha">v0.1.3-alpha</a></li>
+<li>Constants for common configuration and TypeScript helping. at <a href="https://github.com/integralclick/ic_core-server/releases/tag/v0.1.3-alpha">v0.1.3-alpha</a></li>
+<li>Compression Library integration for optimization at <a href="https://github.com/integralclick/ic_core-server/releases/tag/v0.1.4-alpha">v0.1.4-alpha</a></li>
+<li>MongooseCoreModule integration at <a href="https://github.com/integralclick/ic_core-server/releases/tag/v0.1.4-alpha">v0.1.4-alpha</a></li>
+</ul>
+<h3 id="update-2019078-at-v02-alpha">Update 2019/07/8 at <a href="https://github.com/integralclick/ic_core-server/releases/tag/v0.2-alpha">v0.2-alpha</a></h3>
+<ul>
+<li>Module Auth Created, SignIn &amp; SignUp User with JWT implementation.</li>
+<li>JWT with Passport Strategy implemented</li>
+<li>Decorator for User JWT Payload uncoding.</li>
+<li>DTO &amp; Interfaces for custom response format</li>
+<li>Interceptor loggin for getting output from requests</li>
+<li>Pipes Module created for ObjectID format validation, Validation.</li>
+<li>Schema and DB Model for Users</li>
+<li>Use of useGlobalPipes in bootstrap</li>
+<li>Bug Fixes.</li>
+</ul>
+<h2 id="todos">TODO&#39;s</h2>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Environment Variables for Production / Development Mode.</li>
+<li><input checked="" disabled="" type="checkbox"> Documentation with Compodoc </li>
+<li><input checked="" disabled="" type="checkbox"> Authentication strategy with JWT and Local</li>
+<li><input checked="" disabled="" type="checkbox"> Database setup</li>
+<li><input disabled="" type="checkbox"> Consent Registry Schema for RGPD</li>
+<li><input disabled="" type="checkbox"> Email Integration for Double Opt-In on Registration and Password Recovery.</li>
+<li><input disabled="" type="checkbox"> Continuous Integration Testing</li>
+<li><input disabled="" type="checkbox"> Architecture for Modules / Common Utils / Custom Libraries / ETC.</li>
+<li><input disabled="" type="checkbox"> Links to the API Documentation</li>
+</ul>
+<h2 id="changelog">Changelog</h2>
+<p>Please check out the <a href="https://github.com/integralclick/ic_core-server/tags">tag section</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 0;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'getting-started';
+            var COMPODOC_CURRENT_PAGE_URL = 'index.html';
+       </script>
+
+       <script src="./js/libs/custom-elements.min.js"></script>
+       <script src="./js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="./js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="./js/menu-wc.js" defer></script>
+
+       <script src="./js/libs/bootstrap-native.js"></script>
+
+       <script src="./js/libs/es6-shim.min.js"></script>
+       <script src="./js/libs/EventDispatcher.js"></script>
+       <script src="./js/libs/promise.min.js"></script>
+       <script src="./js/libs/zepto.min.js"></script>
+
+       <script src="./js/compodoc.js"></script>
+
+       <script src="./js/tabs.js"></script>
+       <script src="./js/menu.js"></script>
+       <script src="./js/libs/clipboard.min.js"></script>
+       <script src="./js/libs/prism.js"></script>
+       <script src="./js/sourceCode.js"></script>
+          <script src="./js/search/search.js"></script>
+          <script src="./js/search/lunr.min.js"></script>
+          <script src="./js/search/search-lunr.js"></script>
+          <script src="./js/search/search_index.js"></script>
+       <script src="./js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,443 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Core Server Documentation - IntegralClick</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Core Server Documentation - IntegralClick</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content miscellaneous-variables">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Miscellaneous</li>
+  <li>Variables</li>
+</ol>
+
+<section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <ul class="index-list">
+                        <li>
+                            <a href="#GENDER" title="src/auth/schemas/user.schema.ts"><b>GENDER</b>&nbsp;&nbsp;&nbsp;(src/.../user.schema.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#HOST" title="src/config/constants.ts"><b>HOST</b>&nbsp;&nbsp;&nbsp;(src/.../constants.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#JWT_SECRET" title="src/config/constants.ts"><b>JWT_SECRET</b>&nbsp;&nbsp;&nbsp;(src/.../constants.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#MONGO_URI" title="src/config/constants.ts"><b>MONGO_URI</b>&nbsp;&nbsp;&nbsp;(src/.../constants.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#PORT" title="src/config/constants.ts"><b>PORT</b>&nbsp;&nbsp;&nbsp;(src/.../constants.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#ROLES_VALIDOS" title="src/auth/schemas/user.schema.ts"><b>ROLES_VALIDOS</b>&nbsp;&nbsp;&nbsp;(src/.../user.schema.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#SERVER_URL" title="src/config/constants.ts"><b>SERVER_URL</b>&nbsp;&nbsp;&nbsp;(src/.../constants.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#User" title="src/auth/user.decorator.ts"><b>User</b>&nbsp;&nbsp;&nbsp;(src/.../user.decorator.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#UserSchema" title="src/auth/schemas/user.schema.ts"><b>UserSchema</b>&nbsp;&nbsp;&nbsp;(src/.../user.schema.ts)</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    <h3>src/auth/schemas/user.schema.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="GENDER"></a>
+                        <span class="name">
+                            <b>
+                            GENDER</b>
+                            <a href="#GENDER"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    values: [&#x27;man&#x27;, &#x27;woman&#x27;, &#x27;no_defined&#x27;],
+    message: &#x27;\&#x27;{VALUE}\&#x27; is not an allowed option.&#x27;,
+}</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ROLES_VALIDOS"></a>
+                        <span class="name">
+                            <b>
+                            ROLES_VALIDOS</b>
+                            <a href="#ROLES_VALIDOS"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    values: [&#x27;ADMIN_ROLE&#x27;, &#x27;USER_ROLE&#x27;],
+    message: &#x27;\&#x27;{VALUE}\&#x27; is not a allowed role.&#x27;,
+}</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="UserSchema"></a>
+                        <span class="name">
+                            <b>
+                            UserSchema</b>
+                            <a href="#UserSchema"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new Schema({
+    username: { type: String, required: true },
+    password: { type: String, required: true },
+    email: { type: String, required: true },
+    firstName: String,
+    lastName: String,
+    phone: String,
+    role: {
+        type: String,
+        default: &#x27;USER_ROLE&#x27;,
+        enum: ROLES_VALIDOS,
+    },
+    gender: {
+        type: String,
+        default: &#x27;no_defined&#x27;,
+        enum: GENDER,
+    },
+    birth: {
+        type: Date,
+        required: true,
+    },
+    address: {
+        addr1: String,
+        addr2: String,
+        city: String,
+        state: String,
+        country: String,
+        zip: Number,
+    },
+    avatar: String,
+    createdAt: {
+        type: Date,
+        default: Date.now,
+    },
+    updatedAt: Date,
+    lastLoginAt: Date,
+    deleted: {
+        type: Boolean,
+        default: false,
+    },
+    deletedAt: Date,
+}, { strict: &#x27;throw&#x27; })</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/config/constants.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="HOST"></a>
+                        <span class="name">
+                            <b>
+                            HOST</b>
+                            <a href="#HOST"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x60;http://${process.env.HOST}&#x60;</code>
+                        </td>
+                    </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Server&#39;s hostname by default localhost</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="JWT_SECRET"></a>
+                        <span class="name">
+                            <b>
+                            JWT_SECRET</b>
+                            <a href="#JWT_SECRET"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>sha1((process.env.JWT_SECRET || config.get(&#x27;jwt.secret&#x27;)))</code>
+                        </td>
+                    </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Secret bypassed with sha1 encription for more securely</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="MONGO_URI"></a>
+                        <span class="name">
+                            <b>
+                            MONGO_URI</b>
+                            <a href="#MONGO_URI"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x60;${process.env.MONGO_URI}${(process.env.DB_DATABASE || config.get(&#x27;db.database&#x27;))}&#x60;</code>
+                        </td>
+                    </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Gets MONGO_URI variable from EV or YAML</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="PORT"></a>
+                        <span class="name">
+                            <b>
+                            PORT</b>
+                            <a href="#PORT"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>process.env.SERVER_PORT || config.get(&#x27;server.port&#x27;)</code>
+                        </td>
+                    </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>PORT which the server will be running</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="SERVER_URL"></a>
+                        <span class="name">
+                            <b>
+                            SERVER_URL</b>
+                            <a href="#SERVER_URL"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x60;${HOST}:${PORT}&#x60;</code>
+                        </td>
+                    </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Server&#39;s URL constructor</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/auth/user.decorator.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="User"></a>
+                        <span class="name">
+                            <b>
+                            User</b>
+                            <a href="#User"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>createParamDecorator((data, req) &#x3D;&gt; {
+
+    if (!!req.user) {
+        return !!data ? req.user[data] : req.user;
+    }
+
+    const token &#x3D; req.headers.authorization ? (req.headers.authorization as string).split(&#x27; &#x27;)[1] : null;
+    if (token &amp;&amp; token[1]) {
+        const decoded: any &#x3D; jwt.verify(token, JWT_SECRET);
+        return !!data ? decoded[data] : decoded.user;
+    }
+
+})</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'miscellaneous-variables';
+            var COMPODOC_CURRENT_PAGE_URL = 'variables.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
